@@ -14,7 +14,7 @@ RUN	cd /tmp \
 	&& apk del alpine-sdk git wget autoconf automake libtool pcre-dev asciidoc xmlto mbedtls-dev libsodium-dev c-ares-dev linux-headers libev-dev
 
 ADD config.json /etc/shadowsocks-libev/config.json
-
+USER NOBODY
 EXPOSE 80
 
 VOLUME ["/etc/shadowsocks-libev"]
