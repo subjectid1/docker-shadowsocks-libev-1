@@ -15,7 +15,7 @@ RUN	cd /tmp \
 
 ADD config.json /etc/shadowsocks-libev/config.json
 
-EXPOSE 8388
+EXPOSE 80
 
 VOLUME ["/etc/shadowsocks-libev"]
 
